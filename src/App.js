@@ -475,7 +475,7 @@ const startRecording = async () => {
         <div style={styles.docButtonsContainer}>
           {/* View button: Opens the file in a new tab */}
           <a
-            href={`http://localhost:5000/uploads/${doc.filename}`}
+            href={doc.url}
             target="_blank"
             rel="noreferrer"
             style={styles.docButton}

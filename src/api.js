@@ -1,7 +1,8 @@
 // src/api.js
 
-const BASE_URL = "http://localhost:5000/api";
+// const BASE_URL = "http://localhost:5000/api";
 
+const BASE_URL = "https://stealth-backend-git-main-karthiks-projects-decb8394.vercel.app/api";
 // --------------------
 // Authentication APIs
 // --------------------
