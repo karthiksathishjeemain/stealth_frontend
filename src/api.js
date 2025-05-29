@@ -49,10 +49,14 @@ export async function uploadDoc(userId, file) {
 
 export async function getDocs(userId) {
   const res = await fetch(`${BASE_URL}/docs/get/${userId}`);
+  console.log("Response from getDocs:", res);
   return res.json();
 }
 
-
+export async function getDocContent(userId, docId) {
+  const res = await fetch(`${BASE_URL}/docs/content/${userId}/${docId}`);
+  return res.json();
+}
 
 // ------------------------------
 // Session Summarization APIs
@@ -90,3 +94,4 @@ export async function updateDoc(userId, docId, file) {
     });
     return res.json();
   }
+  
